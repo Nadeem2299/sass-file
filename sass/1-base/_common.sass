@@ -1,0 +1,28 @@
+/* COMMON */
+
+body
+  font-family: $font-stack-consolas
+
+h1,h2,h3,h4,h5,h6
+  font-family: $sans-serif-2
+  text-transform: uppercase
+
+h2
+  font-size: 3em
+
+.wrapper
+  +outer-container
+  height: 80px
+a
+  color: $brand-dark
+  border-bottom: solid 1px #333
+  &:hover
+    color: $brand-primary
+.box
+  border: solid 1px #333
+  background-color: grey
+#{$all-buttons}
+  font-family: $sans-serif
+  background: $brand-primary
+  &:hover
+    background: shade($brand-primary, 10%)
